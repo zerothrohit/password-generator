@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Password Generator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="../static/index.js"></script>
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body>
+        <h1>Password Generator</h1>
+        <!-- <input type="text"> -->
+        <!-- <label id="yourPass">{password}}</label> -->
+        <input type="text" id="yourPass" value="{{password}}" readonly>
+        <a href="{{url_for('refresh_password')}}"><button>refresh-button</button></a>
+        <button onclick="copyFunction()">Copy</button>
+
+        <input type="range" min="8" max="50" value="12" steps="1">
+        <br>
+        
+        <input type="checkbox" id="letters" name="letters" value="letters" checked>
+        <label for="letters">Letters</label><br>
+        
+        <input type="checkbox" id="mixed_case" name="mixed_case" value="mixed_case" checked>
+        <label for="mixed_case">Mixed case</label><br>
+        
+        <input type="checkbox" id="punctuation" name="punctuation" value="punctuation" checked>
+        <label for="punctuation">Punctuation</label><br>
+        
+        <input type="checkbox" id="number" name="number" value="number" checked>
+        <label for="number">Numbers</label><br><br>
+
+    </body>
+</html>

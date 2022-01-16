@@ -1,7 +1,7 @@
 from urllib import request
 from flask import Flask, redirect, render_template, url_for, session
 
-import random
+#import random
 import secrets
 import string
 

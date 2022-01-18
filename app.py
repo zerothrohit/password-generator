@@ -1,6 +1,3 @@
-from tabnanny import check
-from turtle import color
-from unicodedata import digit
 from flask import Flask, redirect, render_template, url_for, request
 
 import random

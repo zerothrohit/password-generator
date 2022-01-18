@@ -1,14 +1,18 @@
-import secrets
 import string
-
-alphabet = string.ascii_letters + string.digits
+import random
+import secrets
 
 n = 10
+characters = list(string.ascii_letters + string.digits + "@#!*-_"*random.randint(3,9))
+print(characters)
+random.shuffle(characters)
 
-while True:
-	password = ''.join(secrets.choice(alphabet) for i in range(n))
 
-	if (any(c.islower() for c in password) and any(c.isupper()
-	for c in password) and sum(c.isdigit() for c in password) >= 3):
-		print(password)
-		break
+password = []
+for i in range(n):
+	password.append(secrets.choice(characters))
+
+random.shuffle(password)
+temp = "".join(password)
+
+print(temp)

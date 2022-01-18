@@ -6,31 +6,35 @@
         <title>Password Generator</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "icon" href = "../static/1.png" type = "image/x-icon">
         <script src="../static/index.js"></script>
         <link rel="stylesheet" href="../static/style.css">
     </head>
     <body>
+        <form action="/" method="POST">
         <h1>Password Generator</h1>
-        <!-- <input type="text"> -->
-        <!-- <label id="yourPass">{password}}</label> -->
         <input type="text" id="yourPass" value="{{password}}" readonly>
-        <a href="{{url_for('refresh_password')}}"><button>refresh-button</button></a>
         <button onclick="copyFunction()">Copy</button>
-
-        <input type="range" min="8" max="50" value="12" steps="1">
+        <br>
+        <label>Strength: <label style="color: {{color}};">{{strength}}</label></label>    
+        <br>
+        <br>
+        <label>Password length: </label>
+        <input type="number" name="mynum" value="{{num}}" required>
         <br>
         
-        <input type="checkbox" id="letters" name="letters" value="letters" checked>
+        <input type="checkbox" id="letters" name="mycheckbox" value="letters" {{checkl}}>
         <label for="letters">Letters</label><br>
         
-        <input type="checkbox" id="mixed_case" name="mixed_case" value="mixed_case" checked>
-        <label for="mixed_case">Mixed case</label><br>
+
         
-        <input type="checkbox" id="punctuation" name="punctuation" value="punctuation" checked>
+        <input type="checkbox" id="punctuation" name="mycheckbox" value="punctuation" {{checks}}>
         <label for="punctuation">Punctuation</label><br>
         
-        <input type="checkbox" id="number" name="number" value="number" checked>
+        <input type="checkbox" id="number" name="mycheckbox" value="number" {{checkn}}>
         <label for="number">Numbers</label><br><br>
 
+        <input type="submit" value="Generate Password">
+        </form>
     </body>
 </html>

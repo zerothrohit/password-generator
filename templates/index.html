@@ -7,34 +7,43 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel = "icon" href = "../static/1.png" type = "image/x-icon">
+        <script src="https://kit.fontawesome.com/27c687061b.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
         <script src="../static/index.js"></script>
         <link rel="stylesheet" href="../static/style.css">
     </head>
     <body>
-        <form action="/" method="POST">
+        
+        <div class="container">
         <h1>Password Generator</h1>
+
         <input type="text" id="yourPass" value="{{password}}" readonly>
-        <button onclick="copyFunction()">Copy</button>
-        <br>
-        <label>Strength: <label style="color: {{color}};">{{strength}}</label></label>    
-        <br>
-        <br>
-        <label>Password length: </label>
-        <input type="number" name="mynum" value="{{num}}" required>
-        <br>
-        
-        <input type="checkbox" id="letters" name="mycheckbox" value="letters" {{checkl}}>
-        <label for="letters">Letters</label><br>
-        
+        <!-- <button onclick="copyFunction()">Copy</button> -->
+        <button class="icon" onclick="copyFunction()">
+            <i class="far fa-copy fa-lg"></i>
+        </button>
 
-        
-        <input type="checkbox" id="punctuation" name="mycheckbox" value="punctuation" {{checks}}>
-        <label for="punctuation">Punctuation</label><br>
-        
-        <input type="checkbox" id="number" name="mycheckbox" value="number" {{checkn}}>
-        <label for="number">Numbers</label><br><br>
+        <br>
+        <form action="/" method="POST">
+            <label>Strength: <label style="color: {{color}};">{{strength}}</label></label>    
+            <br>
+            <br>
+            <label>Password length: </label>
+            <input type="number" name="mynum" id="yourNum" value="{{num}}" required>
+            <br>
+            <br>
+            <input type="checkbox" id="letters" name="mycheckbox" value="letters" {{checkl}}>
+            <label for="letters">Letters</label><br>
+            
+            <input type="checkbox" id="punctuation" name="mycheckbox" value="punctuation" {{checks}}>
+            <label for="punctuation">Punctuation</label><br>
+            
+            <input type="checkbox" id="number" name="mycheckbox" value="number" {{checkn}}>
+            <label for="number">Numbers</label><br><br>
 
-        <input type="submit" value="Generate Password">
+            <input type="submit" id="yourSubmit" value="Generate Password">
         </form>
+        </div>
     </body>
 </html>

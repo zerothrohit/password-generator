@@ -1,0 +1,123 @@
+body{
+    font-family: 'Ubuntu Mono', monospace;
+    height: 100vh;
+    background: linear-gradient(
+        -135deg,
+        #0048ce,
+        #008bfd
+    );
+    color: aliceblue;
+}
+
+button{
+    font-family: 'Ubuntu Mono', monospace;
+    color: aliceblue;
+}
+
+input{
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: medium;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<!-- HTML !-->
+<button class="button-29" role="button">Button 29</button>
+
+/* CSS */
+input[type=submit] {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+
+
+.icon{
+    background-color: transparent;
+    border: none;
+}
+
+.container{
+    width: 19%;
+    min-width: 300px;
+    background-color: #1c1e21;
+    padding: 50px 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0);
+}
+
+#yourPass{
+    background-color: transparent;
+    border: 2px solid aliceblue;
+    border-radius: 3px;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+#yourNum{
+    background-color: transparent;
+    border: 2px solid aliceblue;
+    border-radius: 3px;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+#yourSubmit{
+    background-color: transparent;
+    border: 2px solid aliceblue;
+    border-radius: 3px;
+    color: aliceblue;
+    font-size: 28px;
+}
+
+/* input[type=submit]:focus {
+    
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  }
+  
+input[type=submit]:hover {
+    
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+input[type=submit]:active {
+    
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+  } */

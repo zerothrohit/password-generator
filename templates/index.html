@@ -14,22 +14,25 @@
         <link rel="stylesheet" href="../static/style.css">
     </head>
     <body>
-        
+        <div class="popup">
+            <h4>Copied 📋</h4>
+        </div>
         <div class="container">
         <h1>Password Generator</h1>
+        <div class="copy-text">        
+            <input type="text" id="yourPass" value="{{password}}" >
+            <button class="icon" onclick="copyFunction()">
+                <i class="far fa-copy fa-lg"></i>
+            </button>
+        </div>
 
-        <input type="text" id="yourPass" value="{{password}}" readonly>
-        <!-- <button onclick="copyFunction()">Copy</button> -->
-        <button class="icon" onclick="copyFunction()">
-            <i class="far fa-copy fa-lg"></i>
-        </button>
-
-        <br>
         <form action="/" method="POST">
             <label>Strength: <label style="color: {{color}};">{{strength}}</label></label>    
             <br>
             <br>
-            <label>Password length: </label>
+
+            <label style="font-size: large;">Password length: </label>
+            <br>
             <input type="number" name="mynum" id="yourNum" value="{{num}}" required>
             <br>
             <br>
@@ -45,5 +48,10 @@
             <input type="submit" id="yourSubmit" value="Generate Password">
         </form>
         </div>
+        <section class="footer">
+
+            <h4>By <a href="https://github.com/zerothrohit">Rohit Wahwal</a>😄</h4>
+        </section>
+
     </body>
 </html>

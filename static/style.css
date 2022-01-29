@@ -4,7 +4,7 @@
 
 body{
     font-family: 'Ubuntu Mono', monospace;
-    /* height: 100vh; */
+    height: 100vh;
     background: linear-gradient(
         -135deg,
         #0048ce,
@@ -12,10 +12,12 @@ body{
     );
     color: aliceblue;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    position: relative;
 }
+
+html, body {
+    overflow-x: hidden;
+  }
 
 body.dark{
     background-color: white;

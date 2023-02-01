@@ -4,7 +4,10 @@ A simple and safe password generator with random characters
 * Generates super secure passwords
 
 ## Deployment
+Deployed to [railway](https://web-production-c697b.up.railway.app/)
+<!---
 Deployed to [heroku](https://passw0rd-generator.herokuapp.com/)
+-->
 
 ## Versioning
 * Based on Streamlit 2.0.2
